@@ -1,0 +1,16 @@
+# kagerou configuration (https://github.com/rikukadev/kagerou)
+# compute を持たない SPA なので driver: static。環境の実体は preview base
+# バケットの {name}/ プレフィックスで、URL は作成前に確定している。
+project: spa-demo
+driver: static
+region: ap-northeast-1
+name_prefix: spa-demo-
+ttl: 72h
+url_template: "https://{name}.spa-demo.rikuka.dev"
+static:
+  dist: dist
+  bucket: kagerou-base-spa-demo-199410355960
+hooks:
+  # 環境固有の値はビルド成果物に焼き込めない(static はビルド時に環境を知らない)。
+  # up の後に config.json だけ差し替えてから同期される
+  post_up: ./scripts/write-config.sh

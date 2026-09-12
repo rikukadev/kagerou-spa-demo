@@ -1,0 +1,6 @@
+{
+  "env": "local",
+  "apiBaseUrl": "https://api.github.com/repos/rikukadev/kagerou",
+  "builtAt": "dev",
+  "commit": "dev"
+}

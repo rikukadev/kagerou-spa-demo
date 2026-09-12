@@ -1,0 +1,15 @@
+:root { color-scheme: light dark; }
+body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.7; }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.05rem; margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid #8884; }
+.lead { color: #888; }
+.hint { color: #888; font-size: .85rem; }
+.good { color: #2a7; }
+.bad { color: #c44; }
+table { border-collapse: collapse; }
+th { text-align: left; padding: .2rem 1rem .2rem 0; font-weight: 600; white-space: nowrap; }
+td { padding: .2rem 0; }
+code { background: #8882; padding: .1rem .35rem; border-radius: 4px; }
+button { font: inherit; padding: .4rem .9rem; border-radius: 6px; border: 1px solid #8886; cursor: pointer; background: #8881; }
+button:disabled { opacity: .5; cursor: default; }

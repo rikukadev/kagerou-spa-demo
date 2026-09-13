@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <main>
-      <h1>kagerou SPA demo</h1>
+      <h1>kagerou SPA demo 🌫</h1>
       <p className="lead">
         compute を持たない環境の確認用。ビルド成果物は共有 CloudFront 配下の
         S3 プレフィックスに置かれ、環境固有の値は <code>config.json</code> で届く。
